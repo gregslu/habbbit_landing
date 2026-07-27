@@ -74,8 +74,13 @@
   };
 </script>
 <style>
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; background-color: #050b09; }
   body { background-color: #050b09; }
+  #site-nav {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+  }
   .bg-noise {
     background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
     background-size: 22px 22px;
@@ -88,16 +93,20 @@
   .reveal.in { opacity: 1; transform: translateY(0); }
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .brand-mark {
+    letter-spacing: -0.02em;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.08), 0 2px 4px rgba(0,0,0,0.45), 0 0 20px rgba(45,212,191,0.22);
+  }
 </style>
 </head>
 <body class="bg-ink text-slate-200 font-body antialiased">
 
 <!-- ================= NAV ================= -->
-<header id="site-nav" class="fixed top-0 inset-x-0 z-50 transition-colors duration-300">
+<header id="site-nav" class="fixed top-0 inset-x-0 z-50 transition-[background-color,box-shadow] duration-300">
   <nav class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
     <a href="#top" class="flex items-center gap-2.5 font-display font-800 text-xl text-white">
       <img src="images/app-icon.png" alt="Habbbit app icon" class="w-9 h-9 rounded-[10px] shadow-lg">
-      <span>Ha<span class="text-[#5eead4]">b</span><span class="text-[#2dd4bf]">b</span><span class="text-[#14b8a6]">b</span>it</span>
+      <span class="brand-mark">Habbbit</span>
     </a>
 
     <div class="hidden md:flex items-center gap-9 text-sm font-medium text-slate-300">
@@ -337,7 +346,7 @@
     <div>
       <a href="#top" class="flex items-center gap-2.5 font-display font-800 text-lg text-white">
         <img src="images/app-icon.png" alt="Habbbit app icon" class="w-8 h-8 rounded-[8px]">
-        <span>Ha<span class="text-[#5eead4]">b</span><span class="text-[#2dd4bf]">b</span><span class="text-[#14b8a6]">b</span>it</span>
+        <span class="brand-mark">Habbbit</span>
       </a>
       <p class="mt-4 text-sm text-slate-500 leading-relaxed max-w-xs">A calm, focused habit tracker with pixel-art streaks and deep focus analytics.</p>
     </div>
@@ -403,9 +412,9 @@
   const nav = document.getElementById('site-nav');
   const onScroll = () => {
     if (window.scrollY > 12) {
-      nav.classList.add('bg-ink/90', 'backdrop-blur', 'border-b', 'border-line');
+      nav.classList.add('bg-ink/90', 'backdrop-blur', 'shadow-[0_1px_0_0_#1b2e26]');
     } else {
-      nav.classList.remove('bg-ink/90', 'backdrop-blur', 'border-b', 'border-line');
+      nav.classList.remove('bg-ink/90', 'backdrop-blur', 'shadow-[0_1px_0_0_#1b2e26]');
     }
   };
   document.addEventListener('scroll', onScroll);
