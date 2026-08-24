@@ -6,22 +6,22 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://habbbit.app/support.html</loc>
+    <loc>https://habbbit.app/support</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://habbbit.app/contact.html</loc>
+    <loc>https://habbbit.app/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://habbbit.app/privacy.html</loc>
+    <loc>https://habbbit.app/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://habbbit.app/terms.html</loc>
+    <loc>https://habbbit.app/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
