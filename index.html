@@ -210,6 +210,49 @@
       background-size: 300% 300%;
       animation: qrBorderRotate 5s ease infinite;
     }
+
+    /* Hero Screens Floating Animation */
+    @keyframes heroScreenFloatMain {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes heroScreenFloatSub {
+      0%, 100% {
+        transform: translateY(0px) rotate(-8deg);
+      }
+      50% {
+        transform: translateY(-14px) rotate(-6.5deg);
+      }
+    }
+
+    @keyframes heroAuraPulse {
+      0%, 100% {
+        transform: scale(0.95);
+        opacity: 0.5;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.85;
+      }
+    }
+
+    .hero-float-main {
+      animation: heroScreenFloatMain 5s ease-in-out infinite;
+    }
+
+    .hero-float-sub {
+      transform: rotate(-8deg);
+      animation: heroScreenFloatSub 6s ease-in-out infinite -2.5s;
+    }
+
+    .hero-aura {
+      animation: heroAuraPulse 6s ease-in-out infinite;
+    }
   </style>
 </head>
 
@@ -396,13 +439,13 @@
       </div>
 
       <div class="relative reveal flex justify-center lg:justify-end">
-        <div class="absolute inset-0 flex items-center justify-center">
-          <div class="w-72 h-72 bg-mint/10 rounded-full blur-3xl"></div>
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="w-72 h-72 bg-mint/15 rounded-full blur-3xl hero-aura"></div>
         </div>
         <img src="images/screen-habits-active.png" alt="Habbbit app showing daily habits with pixel streak art"
-          class="relative w-64 sm:w-72 rounded-2xl shadow-glow">
+          class="relative w-64 sm:w-72 rounded-2xl shadow-glow hero-float-main transition-transform duration-300 hover:scale-[1.02]">
         <img src="images/screen-streak.png" alt="Habbbit streak screen with pixel streak art"
-          class="hidden sm:block absolute -bottom-10 -left-16 w-44 rounded-2xl rotate-[-8deg]">
+          class="hidden sm:block absolute -bottom-10 -left-16 w-44 rounded-2xl rotate-[-8deg] hero-float-sub transition-transform duration-300 hover:scale-105">
       </div>
     </div>
   </section>
