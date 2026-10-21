@@ -283,6 +283,7 @@
       </a>
 
       <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#video" class="hover:text-mint-light transition-colors">Video</a>
         <a href="#features" class="hover:text-mint-light transition-colors">Features</a>
         <a href="#screens" class="hover:text-mint-light transition-colors">Screens</a>
         <a href="#how" class="hover:text-mint-light transition-colors">How it works</a>
@@ -310,6 +311,7 @@
 
     <div id="mobile-menu" class="hidden md:hidden bg-surface border-t border-line">
       <div class="px-6 py-5 flex flex-col gap-4 text-slate-200 font-medium">
+        <a href="#video" class="py-1.5">Video</a>
         <a href="#features" class="py-1.5">Features</a>
         <a href="#screens" class="py-1.5">Screens</a>
         <a href="#how" class="py-1.5">How it works</a>
@@ -394,6 +396,15 @@
               <span class="block text-base -mt-0.5">Google Play</span>
             </span>
           </a>
+          <a href="#video"
+            class="inline-flex items-center gap-2.5 bg-surface/90 hover:bg-surface border border-line hover:border-mint/50 text-white px-4 sm:px-5 py-3 rounded-2xl font-semibold text-sm hover:text-mint-light transition-all shadow-lg group">
+            <span class="w-7 h-7 rounded-full bg-mint/20 text-mint flex items-center justify-center group-hover:scale-110 group-hover:bg-mint group-hover:text-ink transition-all">
+              <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </span>
+            <span>Watch Video</span>
+          </a>
         </div>
 
         <div class="mt-7 flex items-center gap-4">
@@ -467,6 +478,80 @@
           class="relative w-64 sm:w-72 rounded-2xl shadow-glow hero-float-main transition-transform duration-300 hover:scale-[1.02]">
         <img src="images/screen-streak.png" alt="Habbbit full heatmap contribution graph and streak screen"
           class="hidden sm:block absolute -bottom-10 -left-16 w-44 rounded-2xl rotate-[-8deg] hero-float-sub transition-transform duration-300 hover:scale-105">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= VIDEO ================= -->
+  <section id="video" class="py-20 sm:py-28 lg:py-24 border-t border-line relative overflow-hidden">
+    <div class="absolute inset-0 bg-noise opacity-30 pointer-events-none"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[34rem] h-[20rem] bg-mint/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute -bottom-20 right-10 w-[24rem] h-[24rem] bg-lilac/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mx-auto text-center reveal">
+        <div class="inline-flex items-center gap-2 bg-surface/90 border border-line px-3.5 py-1.5 rounded-full text-xs font-semibold text-mint-light mb-4">
+          <svg class="w-3.5 h-3.5 text-mint" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <span>Watch Habbbit in Action</span>
+        </div>
+        <h2 class="font-display font-800 text-white text-3xl sm:text-4xl lg:text-5xl leading-tight">
+          See how mindful habits come to life.
+        </h2>
+        <p class="mt-4 text-slate-300 text-base sm:text-lg leading-relaxed">
+          Watch a quick tour of focus stopwatch sessions, streak heatmaps, and distraction-free self care routines designed to actually stick.
+        </p>
+      </div>
+
+      <!-- Video Player Card -->
+      <div class="mt-12 sm:mt-14 max-w-4xl mx-auto reveal">
+        <div class="relative rounded-3xl p-2 sm:p-3.5 bg-surface/90 border border-line shadow-2xl backdrop-blur-sm group hover:border-mint/40 transition-colors duration-500">
+          <!-- Ambient behind glow -->
+          <div class="absolute -inset-1.5 bg-gradient-to-r from-mint/25 via-lilac/25 to-mint/25 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+          <div class="relative rounded-2xl overflow-hidden bg-black shadow-2xl aspect-video border border-line/60">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/jXMr5baitgk?rel=0&amp;modestbranding=1"
+              title="Habbbit: Self Care &amp; Habits — Promotional Video"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="mt-3.5 text-center">
+          <a href="https://www.youtube.com/watch?v=jXMr5baitgk" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-mint-light transition-colors">
+            <span>Watch on YouTube</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Highlights beneath video -->
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 text-center">
+          <div class="bg-surface/60 border border-line/70 rounded-2xl p-3.5 sm:p-4">
+            <span class="block font-display font-700 text-white text-sm sm:text-base">Focus Stopwatch</span>
+            <span class="block text-xs text-slate-400 mt-1">Screen wakelock &amp; chimes</span>
+          </div>
+          <div class="bg-surface/60 border border-line/70 rounded-2xl p-3.5 sm:p-4">
+            <span class="block font-display font-700 text-white text-sm sm:text-base">Visual Streaks</span>
+            <span class="block text-xs text-slate-400 mt-1">Contribution heatmaps</span>
+          </div>
+          <div class="bg-surface/60 border border-line/70 rounded-2xl p-3.5 sm:p-4">
+            <span class="block font-display font-700 text-white text-sm sm:text-base">Daily Quotes</span>
+            <span class="block text-xs text-slate-400 mt-1">Milestone motivation</span>
+          </div>
+          <div class="bg-surface/60 border border-line/70 rounded-2xl p-3.5 sm:p-4">
+            <span class="block font-display font-700 text-white text-sm sm:text-base">100% Private</span>
+            <span class="block text-xs text-slate-400 mt-1">Offline, no login required</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1117,6 +1202,7 @@
       <div>
         <h4 class="text-white font-semibold text-sm">Product</h4>
         <ul class="mt-4 space-y-3 text-sm text-slate-400">
+          <li><a href="#video" class="hover:text-mint-light transition-colors">Video Preview</a></li>
           <li><a href="#features" class="hover:text-mint-light transition-colors">Features</a></li>
           <li><a href="#screens" class="hover:text-mint-light transition-colors">Screens</a></li>
           <li><a href="#how" class="hover:text-mint-light transition-colors">How it works</a></li>
