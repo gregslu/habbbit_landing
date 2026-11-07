@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,7 @@
   <link rel="canonical" href="https://habbbit.app/privacy">
   <link rel="icon" type="image/png" href="images/app-icon.png">
   <link rel="apple-touch-icon" href="images/app-icon.png">
-  <meta name="theme-color" content="#050b09">
+  <meta name="theme-color" content="#020608">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://habbbit.app/privacy">
@@ -29,18 +28,16 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            ink: '#050b09', surface: '#0c1a15', surface2: '#101f19', line: '#1b2e26',
-            mint: { DEFAULT: '#2dd4bf', light: '#5eead4' },
-            lilac: '#a78bfa', amber: '#f5a524', coral: '#fb7185',
+            ink: '#020608', surface: '#080f12', surface2: '#0d1820', line: '#132030',
+            cyan: { DEFAULT: '#06b6d4', light: '#22d3ee', dark: '#0891b2' },
+            violet: { DEFAULT: '#7c3aed', light: '#8b5cf6' },
           },
           fontFamily: { display: ['Poppins', 'sans-serif'], body: ['Inter', 'sans-serif'] },
         },
@@ -48,76 +45,66 @@
     };
   </script>
   <style>
-    body {
-      background-color: #050b09;
+    html { background-color: #020608; }
+    body { background-color: #020608; }
+    .brand-mark {
+      letter-spacing: -0.02em;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.08), 0 2px 4px rgba(0,0,0,0.5), 0 0 20px rgba(6,182,212,0.25);
     }
-
     .prose-doc h2 {
       font-family: 'Poppins', sans-serif;
       font-weight: 700;
       color: #fff;
-      font-size: 1.25rem;
-      margin-top: 2.25rem;
-      margin-bottom: 0.75rem;
+      font-size: 1.15rem;
+      margin-top: 2rem;
+      margin-bottom: 0.6rem;
     }
-
-    .prose-doc p,
-    .prose-doc li {
+    .prose-doc p, .prose-doc li {
       color: #94a3b8;
       font-size: 0.95rem;
-      line-height: 1.75;
+      line-height: 1.8;
     }
-
     .prose-doc ul {
       list-style: disc;
       padding-left: 1.25rem;
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
     }
-
     .prose-doc a {
-      color: #5eead4;
+      color: #22d3ee;
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    .brand-mark {
-      letter-spacing: -0.02em;
-      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.08), 0 2px 4px rgba(0, 0, 0, 0.45), 0 0 20px rgba(45, 212, 191, 0.22);
-    }
   </style>
 </head>
-
 <body class="bg-ink text-slate-200 font-body antialiased">
 
-  <header id="site-nav" class="fixed top-0 inset-x-0 z-50 bg-ink/90 backdrop-blur border-b border-line">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
+  <header class="fixed top-0 inset-x-0 z-50 bg-ink/92 backdrop-blur border-b border-line">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between py-4">
       <a href="/" class="flex items-center gap-2.5 font-display font-800 text-xl text-white">
-        <img src="images/app-icon.png" alt="Habbbit app icon" class="w-9 h-9 rounded-[10px] shadow-lg">
-        <span class="brand-mark">Ha<span class="text-mint">bbb</span>it</span>
+        <img src="images/app-icon.png" alt="Habbbit" class="w-9 h-9 rounded-[10px] shadow-lg">
+        <span class="brand-mark">Ha<span class="text-cyan">bbb</span>it</span>
       </a>
-      <div class="hidden md:flex items-center gap-9 text-sm font-medium text-slate-300">
-        <a href="/#features" class="hover:text-mint-light transition-colors">Features</a>
-        <a href="/#screens" class="hover:text-mint-light transition-colors">Screens</a>
-        <a href="/support" class="hover:text-mint-light transition-colors">Support</a>
-        <a href="/contact" class="hover:text-mint-light transition-colors">Contact</a>
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-400">
+        <a href="index.html#features" class="hover:text-cyan-light transition-colors">Features</a>
+        <a href="index.html#screens" class="hover:text-cyan-light transition-colors">Screens</a>
+        <a href="support.html" class="hover:text-cyan-light transition-colors">Support</a>
       </div>
-      <a href="/" class="text-sm font-medium text-mint-light">Home</a>
+      <a href="/" class="text-sm font-medium text-cyan-light">&larr; Home</a>
     </nav>
   </header>
 
-  <section class="pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-36 lg:pb-24">
+  <section class="pt-28 pb-20 sm:pt-36 sm:pb-28">
     <div class="max-w-3xl mx-auto px-5 sm:px-8">
-      <span class="text-mint-light font-semibold text-sm tracking-wide uppercase">Legal</span>
+      <span class="text-cyan-light font-semibold text-sm tracking-wider uppercase">Legal</span>
       <h1 class="font-display font-800 text-white text-4xl sm:text-5xl mt-3">Privacy Policy</h1>
       <p class="mt-3 text-sm text-slate-500">Last updated: May 2026</p>
 
       <div class="prose-doc mt-8">
-        <p>This Privacy Policy describes how Grzegorz Ślusarski ("we", "our", or "us") handles information in relation
-          to the mobile application Habbbit ("App").</p>
+        <p>This Privacy Policy describes how Grzegorz Ślusarski ("we", "our", or "us") handles information in relation to the mobile application Habbbit ("App").</p>
 
         <h2>1. Overview</h2>
-        <p>Habbbit is designed with privacy in mind. We do not require user accounts and we do not collect personally
-          identifiable information directly.</p>
+        <p>Habbbit is designed with privacy in mind. We do not require user accounts and we do not collect personally identifiable information directly.</p>
 
         <h2>2. Data We Do Not Collect</h2>
         <p>We do not collect or store:</p>
@@ -142,48 +129,37 @@
           <li>Google Drive (Android)</li>
           <li>Apple iCloud / Keychain (iOS)</li>
         </ul>
-        <p>This data is controlled by your personal account with those providers. We do not access or store this data on
-          our servers.</p>
+        <p>This data is controlled by your personal account with those providers. We do not access or store this data on our servers.</p>
 
         <h2>5. Third-Party Services</h2>
-        <p><strong>a) RevenueCat</strong><br>We use RevenueCat to manage subscriptions and purchases. RevenueCat may
-          process anonymous purchase data, device identifiers, and subscription status.</p>
-        <p><strong>b) Sentry</strong><br>We use Sentry for error monitoring and performance tracking. This data is used
-          strictly to improve app stability and performance.</p>
+        <p><strong>a) RevenueCat</strong><br>We use RevenueCat to manage subscriptions and purchases. RevenueCat may process anonymous purchase data, device identifiers, and subscription status.</p>
+        <p><strong>b) Sentry</strong><br>We use Sentry for error monitoring and performance tracking. This data is used strictly to improve app stability and performance.</p>
 
         <h2>6. Purchases</h2>
-        <p>All payments are processed by Apple App Store or Google Play. We do not store or process payment information.
-        </p>
+        <p>All payments are processed by Apple App Store or Google Play. We do not store or process payment information.</p>
 
         <h2>7. Data Security</h2>
         <p>We take reasonable measures to protect your data. However, no system is completely secure.</p>
 
         <h2>8. Data Retention</h2>
-        <p>Since we do not store user data on our servers, data retention is controlled entirely by the user and their
-          device backups.</p>
+        <p>Since we do not store user data on our servers, data retention is controlled entirely by the user and their device backups.</p>
 
         <h2>9. Children's Privacy</h2>
-        <p>The App is not directed to children under 13 (or applicable age in your region), and we do not knowingly
-          collect data from children.</p>
+        <p>The App is not directed to children under 13 (or applicable age in your region), and we do not knowingly collect data from children.</p>
 
         <h2>10. Your Rights (GDPR / CCPA)</h2>
-        <p>Under the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA), users
-          have rights regarding their data. Because we do not store personal data on our own servers, you may exercise
-          these rights by:</p>
+        <p>Because we do not store personal data on our own servers, you may exercise your rights by:</p>
         <ul>
           <li>Deleting your session data and history within the App settings.</li>
           <li>Managing or deleting your backups directly within your Google Drive or iCloud settings.</li>
-          <li>Contacting our third-party partners (RevenueCat and Sentry) regarding any device-specific identifiers they
-            may process.</li>
+          <li>Contacting our third-party partners (RevenueCat and Sentry) regarding any device-specific identifiers they may process.</li>
         </ul>
 
         <h2>11. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Updates will be reflected by the "Last updated" date.
-        </p>
+        <p>We may update this Privacy Policy from time to time. Updates will be reflected by the "Last updated" date.</p>
 
         <h2>12. Contact</h2>
-        <p>If you have questions, contact us at: <a href="mailto:greg.slusarski@gmail.com">greg.slusarski@gmail.com</a>
-        </p>
+        <p>If you have questions, contact us at: <a href="mailto:greg.slusarski@gmail.com">greg.slusarski@gmail.com</a></p>
       </div>
     </div>
   </section>
@@ -191,20 +167,19 @@
   <footer class="border-t border-line bg-surface">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
       <a href="/" class="flex items-center gap-2.5 font-display font-800 text-white">
-        <img src="images/app-icon.png" alt="Habbbit app icon" class="w-8 h-8 rounded-[8px]">
-        <span class="brand-mark">Ha<span class="text-mint">bbb</span>it</span>
+        <img src="images/app-icon.png" alt="Habbbit" class="w-8 h-8 rounded-[8px]">
+        <span class="brand-mark">Ha<span class="text-cyan">bbb</span>it</span>
       </a>
       <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-400">
-        <a href="/support" class="hover:text-mint-light transition-colors">Support</a>
-        <a href="/contact" class="hover:text-mint-light transition-colors">Contact</a>
-        <a href="/privacy" class="hover:text-mint-light transition-colors">Privacy Policy</a>
-        <a href="/terms" class="hover:text-mint-light transition-colors">Terms of Service</a>
+        <a href="support.html" class="hover:text-cyan-light transition-colors">Support</a>
+        <a href="contact.html" class="hover:text-cyan-light transition-colors">Contact</a>
+        <a href="privacy.html" class="hover:text-cyan-light transition-colors">Privacy Policy</a>
+        <a href="terms.html" class="hover:text-cyan-light transition-colors">Terms of Use</a>
       </div>
-      <p class="text-xs text-slate-500">&copy; <span id="year"></span> Habbbit</p>
+      <p class="text-xs text-slate-600">&copy; <span id="year"></span> Habbbit</p>
     </div>
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
-
 </html>
